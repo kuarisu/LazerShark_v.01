@@ -9,7 +9,6 @@ public class AnimationShark : MonoBehaviour {
         if (col.gameObject.tag == "Water")
         {
             AnimShark.SetBool("inWater", true);
-            Debug.Log(AnimShark.GetBool("inWater"));
 
         }
     }
@@ -19,7 +18,6 @@ public class AnimationShark : MonoBehaviour {
         if (col.gameObject.tag == "Water")
         {
             AnimShark.SetBool("inWater", false);
-            Debug.Log(AnimShark.GetBool("inWater"));
         }
     }
 }

@@ -63,23 +63,8 @@ public class Move_Shark_Two : MonoBehaviour
         {
             StartCoroutine(Immobilisation());
         }
-
-        //if (col.gameObject.tag == "Water")
-        //{
-        //    AnimShark.SetBool("inWater", true);
-        //    Debug.Log(AnimShark.GetBool("inWater"));
-
-        //}
     }
 
-    //void OnTriggerExit(Collider col)
-    //{
-    //    if (col.gameObject.tag == "Water")
-    //    {
-    //        AnimShark.SetBool("inWater", false);
-    //        Debug.Log(AnimShark.GetBool("inWater"));
-    //    }
-    //}
 
     IEnumerator Immobilisation()
     {
