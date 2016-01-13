@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 481eef1866bfc004aa4a09b33261c992
+timeCreated: 1452553755
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bone_nageoire_l_1
+    100002: Bone_nageoire_l_2
+    100004: Bone_nageoire_r_1
+    100006: Bone_nageoire_r_2
+    100008: Bone_Shark_1
+    100010: Bone_Shark_2
+    100012: Bone_Shark_3
+    100014: Bone_Shark_4
+    100016: Bone_Shark_5
+    100018: IK Chain001
+    100020: IK Chain002
+    100022: //RootNode
+    100024: Sharky
+    400000: Bone_nageoire_l_1
+    400002: Bone_nageoire_l_2
+    400004: Bone_nageoire_r_1
+    400006: Bone_nageoire_r_2
+    400008: Bone_Shark_1
+    400010: Bone_Shark_2
+    400012: Bone_Shark_3
+    400014: Bone_Shark_4
+    400016: Bone_Shark_5
+    400018: IK Chain001
+    400020: IK Chain002
+    400022: //RootNode
+    400024: Sharky
+    4300000: Sharky
+    7400000: Idle
+    7400002: Jump
+    9500000: //RootNode
+    13700000: Sharky
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Shark_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_l_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_l_1/Bone_nageoire_l_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_r_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_r_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_Shark_4
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_Shark_4/Bone_Shark_5
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: Sharky
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_Shark_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_l_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_l_1/Bone_nageoire_l_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_r_1
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_nageoire_r_2
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_Shark_4
+        weight: 1
+      - path: Bone_Shark_1/Bone_Shark_2/Bone_Shark_3/Bone_Shark_4/Bone_Shark_5
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: Sharky
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
