@@ -6,10 +6,13 @@ public class Move_Shark_One : MonoBehaviour {
 
     public GameObject RightForce;
     public GameObject LeftForce;
-    private int speedForce = 275;
-    private float coolDown = 0.6f;
+    private int speedForceUp = 275;
+    private int speedForceDown = 20;
+    private float coolDown = 0.2f;
     private bool moveOKleft = true;
     private bool moveOKright = true;
+    private Vector3 LeftPosition;
+    private Vector3 RightPosition;
     //public Animator AnimShark;
 
 
@@ -24,13 +27,15 @@ public class Move_Shark_One : MonoBehaviour {
             StartCoroutine(RightMovement());
         }
 
+        LeftPosition = transform.InverseTransformPoint(LeftForce.transform.position);
+        RightPosition = transform.InverseTransformPoint(RightForce.transform.position);
     }
 
     //Coroutine ajout force à gauche du Player_One
     IEnumerator LeftMovement()
     {
         moveOKleft = false;
-        GetComponent<Rigidbody>().AddForceAtPosition(Vector3.up * speedForce, LeftForce.transform.position);
+        GetComponent<Rigidbody>().AddForceAtPosition(Vector3.up * speedForceUp, LeftPosition);
         yield return new WaitForSeconds(coolDown);
         moveOKleft = true;
        
@@ -42,7 +47,7 @@ public class Move_Shark_One : MonoBehaviour {
     {
 
         moveOKright = false;
-        GetComponent<Rigidbody>().AddForceAtPosition(Vector3.up * speedForce, RightForce.transform.position);
+        GetComponent<Rigidbody>().AddForceAtPosition(Vector3.down * speedForceDown, RightPosition);
         yield return new WaitForSeconds(coolDown);
         moveOKright = true;
        
@@ -63,23 +68,9 @@ public class Move_Shark_One : MonoBehaviour {
             Destroy(col.gameObject);
             StartCoroutine(Immobilisation());
         }
-
-        //if (col.gameObject.tag == "Water")
-        //{
-        //    AnimShark.SetBool("inWater", true);
-        //    Debug.Log(AnimShark.GetBool("inWater"));
- 
-        //}
     }
 
-    //void OnTriggerExit(Collider col)
-    //{
-    //    if (col.gameObject.tag == "Water")
-    //    {
-    //        AnimShark.SetBool("inWater", false);
-    //        Debug.Log(AnimShark.GetBool("inWater"));
-    //    }
-    //}
+
 
     IEnumerator Immobilisation()
     {
